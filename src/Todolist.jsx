@@ -24,10 +24,10 @@ const TodoList = () => {
                     {todos.map((todo) => (
                         <li className='list-group-item' key={todo.id}>
                             <div className='row py-3 gy-3 align-items-center'>
-                                <div className='col-md-8 h5 text-muted'>
+                                <div className='col-md-8 h5 text-muted bordr'>
                                     {todo.text}
                                 </div>
-                                <div className='col-md-4 d-flex justify-content-md-end'>
+                                <div className='col-md-4 d-flex justify-content-md-end justify-content-sm-start justify-content-center'>
                                     <div className='row'>
                                         <div className='col'>
                                             <button type="button" className="btn btn-danger" onClick={() => handleRemove(todo.id)}>Remove</button>
